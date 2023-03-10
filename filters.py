@@ -15,7 +15,8 @@
     #give driver a link to the scraping site
    ]
   }
-
+ }  
+  
 driver = webdriver.Firefox(executable_path=GeckoDriverManager().install())
 driver.implicitly_wait(10)
 driver.get("https://www.olx.pl/d/nieruchomosci/mieszkania/")
