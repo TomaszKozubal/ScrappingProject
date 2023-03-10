@@ -1,10 +1,11 @@
-'''import time
+```
+import time
 import pandas as pd
 from selenium.webdriver.common.by import By
 from selenium import webdriver
-from webdriver_manager.firefox import GeckoDriverManager'''
-
-'''#give driver a link to the scraping site
+from webdriver_manager.firefox import GeckoDriverManager
+#give driver a link to the scraping site
+```
 
 driver = webdriver.Firefox(executable_path=GeckoDriverManager().install())
 driver.implicitly_wait(10)
@@ -18,7 +19,7 @@ try:
     accept = driver.find_element_by_id(By.ID, 'onetrust-accept-btn-handler')
     accept.click()
 except:
-    pass'''
+    pass
 
 ##########################################
 #filters
